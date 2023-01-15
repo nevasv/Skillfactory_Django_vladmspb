@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'flatpages/css/main.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<aside>
+    <h1>Блок nav </h1>
+     <li>
+         <a href="/pages/">Вернуться к дефолту</a>
+     </li>
+
+</aside>
+<main>
+   {% block content %}
+   {% endblock %}
+</main>
+
+
+</body>
+</html>
