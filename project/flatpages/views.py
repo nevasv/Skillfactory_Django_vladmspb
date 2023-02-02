@@ -1,3 +1,4 @@
+# Create your views here.
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound
 
@@ -27,3 +28,4 @@ def static_pages_id(request, partner_pages: int):
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
+
