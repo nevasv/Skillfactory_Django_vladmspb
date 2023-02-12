@@ -32,6 +32,7 @@ class ProductsList(ListView):
         context['next_sale'] = None  # или "Распродажа в среду!" Например
         return context
 
+
 class ProductDetail(DetailView):
     # Модель всё та же, но мы хотим получать информацию по отдельному товару
     model = Product
